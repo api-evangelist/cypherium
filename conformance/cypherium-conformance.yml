@@ -1,0 +1,27 @@
+generated: '2026-07-18'
+method: searched
+source: >
+  https://github.com/cypherium/rosetta-cypherium, https://github.com/cypherium/cypher (JSON-RPC docs),
+  https://www.cypherium.io/ (ISO 20022 claim). No formal certification/compliance program published.
+standards:
+  - id: rosetta-api
+    name: Coinbase Rosetta API (Data + Construction)
+    conforms: true
+    evidence: cypherium/rosetta-cypherium is a Golang reference implementation of the Rosetta API for Cypherium (Data API online :8080, Construction/offline :8081).
+  - id: ethereum-json-rpc
+    name: Ethereum JSON-RPC
+    conforms: true
+    evidence: Cypherium node (Geth-based, cypherium-v2.0.0) exposes eth/web3/net/personal/miner/txpool/admin namespaces over HTTP/WS/IPC JSON-RPC; verified web3_clientVersion at https://pubnodes.cypherium.io/rpc.
+  - id: evm
+    name: Ethereum Virtual Machine / Solidity
+    conforms: true
+    evidence: EVM-compatible chain (cvm - Cypherium Virtual Machine); deploys Solidity contracts and Uniswap V2 forks; EVM chain ID 16166.
+  - id: iso-20022
+    name: ISO 20022 financial messaging
+    conforms: claimed
+    evidence: cypherium.io markets ISO 20022 compliance for banking integration (Cypherium Connect); no third-party attestation published.
+  - id: rfc9457-problem-details
+    conforms: false
+  - id: oauth2
+    conforms: false
+    evidence: node JSON-RPC is unauthenticated; no OAuth2 surface.

@@ -1,0 +1,35 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.npmjs.com/package/@cypherium/web3c + https://pkg.go.dev/github.com/cypherium
+packages:
+  - language: javascript
+    registry: npm
+    name: "@cypherium/web3c"
+    version: 0.10.1
+    url: https://www.npmjs.com/package/@cypherium/web3c
+    repository: https://github.com/cypherium/web3c.js
+    install: npm install @cypherium/web3c
+    description: Cypherium JavaScript API, middleware to talk to a Cypherium node over JSON-RPC (web3-compatible).
+    license: LGPL-3.0
+    official: true
+  - language: go
+    registry: pkg.go.dev
+    name: github.com/cypherium/cypherBFT
+    url: https://pkg.go.dev/github.com/cypherium/cypherBFT/cph
+    repository: https://github.com/cypherium/cypherBFT
+    install: go get github.com/cypherium/cypherBFT
+    description: Cypherium blockchain full-node (cypherBFT) Go implementation and cph client packages.
+    official: true
+  - language: go
+    registry: pkg.go.dev
+    name: github.com/cypherium/blockchain
+    url: https://pkg.go.dev/github.com/cypherium/blockchain
+    repository: https://github.com/cypherium/blockchain
+    install: go get github.com/cypherium/blockchain
+    description: Cypherium blockchain protocol Go implementation.
+    license: AGPL-3.0
+    official: true
+notes: >
+  uniswap-sdk-cypherium and uniswap-interface-cypherium exist as first-party GitHub repos
+  (TypeScript forks of the Uniswap V2 SDK/interface) but are not published to a public package
+  registry, so they are not listed as installable packages here.

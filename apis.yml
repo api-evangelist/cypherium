@@ -1,8 +1,28 @@
 aid: cypherium
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cypherium.png
 name: Cypherium
-description: 'Cypherium is a company surfaced as a portfolio company of pantera-capital and added to the
-  API Evangelist network as a stub for enrichment. Sector: crypto. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: >-
+  Cypherium is a permissionless Layer-1 blockchain built to bridge centralized (CeFi) and
+  decentralized (DeFi) finance and bring real-world assets on-chain at scale. It runs CypherBFT,
+  a hybrid consensus that pairs GPU proof-of-work committee election with HotStuff Byzantine
+  Fault Tolerance for near-instant finality, and is EVM/Solidity compatible (EVM chain ID 16166).
+  Products include CypherLink (cross-ledger notary), Cypherium Connect (bank integration plugin,
+  marketed as ISO 20022 compliant), the Cypherium Validator, and Cypherium ID (decentralized
+  identity). Developers integrate through an Ethereum-style JSON-RPC node API (eth/web3/net/
+  personal/miner/txpool/admin namespaces over HTTP, WS and IPC) and a Coinbase Rosetta API
+  implementation for exchange and wallet integration. Surfaced as a portfolio company of
+  Pantera Capital and enriched into the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/cypherium/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,11 +32,44 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Crypto
-apis: []
+- Blockchain
+- Layer 1
+- JSON-RPC
+- EVM
+- DeFi
+- Rosetta
+- Consensus
+apis:
+- name: Cypherium JSON-RPC API
+  description: >-
+    Ethereum-compatible JSON-RPC node API for the Cypherium Layer-1 mainnet — eth, web3, net,
+    personal, miner, txpool and admin namespaces over HTTP, WebSocket and IPC. EVM chain ID 16166,
+    native currency CPH.
+  humanURL: https://github.com/cypherium/cypher
+  baseURL: https://pubnodes.cypherium.io/rpc
+  tags:
+  - JSON-RPC
+  - EVM
+  - Blockchain
+  properties:
+  - type: Documentation
+    url: https://github.com/cypherium/cypher
+  - type: BlockExplorer
+    url: https://cypherium.tryethernal.com/
+- name: Rosetta Cypherium API
+  description: >-
+    Coinbase Rosetta API (Data + Construction) reference implementation for Cypherium, enabling
+    standardized blockchain data access and stateless offline transaction construction for
+    exchanges and wallets.
+  humanURL: https://github.com/cypherium/rosetta-cypherium
+  baseURL: https://github.com/cypherium/rosetta-cypherium
+  tags:
+  - Rosetta
+  - Blockchain
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -25,3 +78,24 @@ maintainers:
 common:
 - type: Website
   url: https://www.cypherium.io/
+- type: GitHubOrganization
+  url: https://github.com/cypherium
+- type: Documentation
+  url: https://github.com/cypherium/cypher
+- type: Blog
+  url: https://www.cypherium.io/blog
+- type: Packages
+  url: packages/cypherium-packages.yml
+- type: SDKs
+  url: packages/cypherium-packages.yml
+- type: Conformance
+  url: conformance/cypherium-conformance.yml
+- type: DomainSecurity
+  url: security/cypherium-domain-security.yml
+- type: LLMsTxt
+  url: llms/cypherium-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

@@ -1,0 +1,27 @@
+# Cypherium
+
+> Cypherium is a permissionless Layer-1 blockchain that bridges centralized (CeFi) and decentralized (DeFi) finance for real-world assets. It runs the CypherBFT hybrid consensus (GPU proof-of-work committee election + HotStuff BFT) for instant finality, is EVM/Solidity compatible, and markets ISO 20022 banking integration. Developers interact with it through an Ethereum-style JSON-RPC node API and a Coinbase Rosetta API implementation.
+
+## APIs
+- [Cypherium JSON-RPC](https://pubnodes.cypherium.io/rpc): Ethereum-compatible node JSON-RPC over HTTP/WS/IPC — eth, web3, net, personal, miner, txpool, admin namespaces (EVM chain ID 16166).
+- [Rosetta Cypherium](https://github.com/cypherium/rosetta-cypherium): Coinbase Rosetta API (Data + Construction) reference implementation for exchange/wallet integration.
+
+## Docs
+- [cypher node & RPC docs](https://github.com/cypherium/cypher): node implementation and JSON-RPC usage
+- [Cypherium website](https://www.cypherium.io/): products (CypherLink, Cypherium Connect, Validator, Cypherium ID)
+- [Block explorer](https://cypherium.tryethernal.com/): mainnet explorer (Ethernal)
+- [Blog](https://www.cypherium.io/blog): announcements and technical posts
+- [Medium](https://cypherium.medium.com/): long-form updates and mining guide
+
+## Packages
+- [@cypherium/web3c](https://www.npmjs.com/package/@cypherium/web3c): official JavaScript RPC client (npm)
+- [github.com/cypherium/cypherBFT](https://pkg.go.dev/github.com/cypherium/cypherBFT/cph): Go full-node packages
+- [github.com/cypherium/blockchain](https://pkg.go.dev/github.com/cypherium/blockchain): Go protocol implementation
+
+## Source
+- [Cypherium on GitHub](https://github.com/cypherium): 25 repos — node (blockchain, cypher, cvm, cypherHotstuff), Rosetta, wallet-server, Uniswap V2 forks, meshbridge (EVM cross-chain), examples
+
+## Artifacts (API Evangelist)
+- [packages](https://raw.githubusercontent.com/api-evangelist/cypherium/refs/heads/main/packages/cypherium-packages.yml)
+- [conformance](https://raw.githubusercontent.com/api-evangelist/cypherium/refs/heads/main/conformance/cypherium-conformance.yml)
+- [domain security](https://raw.githubusercontent.com/api-evangelist/cypherium/refs/heads/main/security/cypherium-domain-security.yml)

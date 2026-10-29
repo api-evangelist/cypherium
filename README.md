@@ -64,6 +64,87 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Cypherium is a company surfaced as a portfolio company of pantera-capital and added to the API Evangelist network as a stub for enrichment. Sector: crypto. This profile is a lead awaiting the enrichment pipeline.
+Cypherium is a permissionless Layer-1 blockchain built to bridge centralized (CeFi) and decentralized (DeFi) finance and bring real-world assets on-chain at scale. It runs CypherBFT, a hybrid consensus that pairs GPU proof-of-work committee election with HotStuff Byzantine Fault Tolerance for near-instant finality, and is EVM/Solidity compatible (EVM chain ID 16166). Products include CypherLink (cross-ledger notary), Cypherium Connect (bank integration plugin, marketed as ISO 20022 compliant), the Cypherium Validator, and Cypherium ID (decentralized identity). Developers integrate through an Ethereum-style JSON-RPC node API (eth/web3/net/ personal/miner/txpool/admin namespaces over HTTP, WS and IPC) and a Coinbase Rosetta API implementation for exchange and wallet integration. Surfaced as a portfolio company of Pantera Capital and enriched into the API Evangelist network.
 
-Backed by: pantera-capital — https://www.cypherium.io/
+**Areas:** Company · Cryptocurrency · Blockchain · Layer 1 · JSON-RPC · EVM · DeFi · Rosetta · Consensus
+
+## Cypherium on APIs.io
+
+Everything profiled for Cypherium is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/cypherium/](https://apis.io/providers/cypherium/)** — or go straight to one of the APIs or properties below.
+
+### APIs (2)
+
+- [Cypherium JSON-RPC API](https://apis.io/apis/cypherium/cypherium-json-rpc-api/) — Ethereum-compatible JSON-RPC node API for the Cypherium Layer-1 mainnet — eth, web3, net, personal, miner, txpool and admin namespaces over HTTP, WebSocket…
+- [Rosetta Cypherium API](https://apis.io/apis/cypherium/rosetta-cypherium-api/) — Coinbase Rosetta API (Data + Construction) reference implementation for Cypherium, enabling standardized blockchain data access and stateless offline…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Cypherium Domain Security](https://apis.io/security/cypherium/cypherium-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.cypherium.io/)
+- [Documentation](https://github.com/cypherium/cypher)
+- [Blog](https://www.cypherium.io/blog)
+- [GitHub](https://github.com/cypherium)
+
+## API Evangelist rating
+
+**Kin Score 13.0** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 19.0 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/cypherium/](https://apis.io/providers/cypherium/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Cypherium: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/cypherium/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
